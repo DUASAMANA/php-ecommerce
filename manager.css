@@ -1,0 +1,51 @@
+body {
+    background-image:  url('https://img.freepik.com/premium-photo/spa-cosmetic-products-branches-with-leaves_185193-23625.jpg?w=2000');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat; /* Prevent repeating of the image */
+    background-size: cover;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: #333;
+    color:white;
+}
+
+.dashboard {
+    display: flex;
+    
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color:  #f7dfbf;
+}
+
+/* Style the headers of the columns */
+.column h2 {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+font-weight: bold;
+font-size: 40px;
+
+}
+
+/* Style the user IDs and reviews */
+.user-id {
+    font-weight: bold;
+}
+
+h1 {
+text-align: center;
+font-family: 'Dancing Script', cursive;
+font-weight: bold;
+font-size: 50px;
+
+}

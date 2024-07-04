@@ -1,0 +1,324 @@
+/* Reset default margin and padding */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+.logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 70px;
+    align-items: center;
+}
+
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: #333;
+    color:white;
+}
+
+.menu-icon, .search-icon, .cart-icon {
+    cursor: pointer;
+    font-size:x-large;/* Adjust the size as needed */
+}
+
+.menu-sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #222;
+    transition: left 0.3s ease;
+}
+
+.menu-sidebar.active {
+    left: 0;
+}
+.cart-sidebar {
+    position: fixed;
+    top: 0px;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #222;
+    transition: right 0.3s ease;
+}
+
+.cart-sidebar.active{
+    right:0;
+}
+
+.cart-sidebar h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    margin-top: 50px; /* Adjust the margin-top value as needed */
+    text-align: center; /* Center-align the text */
+}
+
+.cart-sidebar p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center; /* Center-align the text */
+    color: #fff; /* Adjust the text color */
+}
+
+.cart-sidebar #cart-total {
+    color: white; /* Adjust the color of the total amount */
+}
+
+
+
+
+
+ul {
+    list-style: none;
+    padding: 50px;
+}
+
+ul li {
+    margin-bottom: 50px;
+}
+
+
+
+
+.search-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-box.active {
+    display: block;
+}
+
+.close-icon {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    color:white; /* Adjust the icon color */
+}
+
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-bottom: 50px;/* Adjust the margin as needed */
+    margin-top: 70px;/* Adjust the margin as needed */
+    margin-left: 50px;/* Adjust the margin as needed */
+}
+
+.nav-links a {
+    display: block; /* Make the link a block-level element */
+    text-decoration: none; /* Remove underline from the link */
+    font-weight: bold;
+    color: rosybrown; /* Apply the desired link color */
+}
+
+/* CSS styles for the columns */
+.brand-column {
+    width: 100%; /* Full width for the brand column */
+    text-align: center; /* Center the brand name text */
+    margin-bottom: 0px;
+}
+
+.brand-title {
+    font-size: 45px; /* Adjust the font size as needed */
+    color: #333; /* Adjust the text color as needed */
+    font-family: 'Dancing Script', cursive;
+    background-color: aquamarine;
+    margin-bottom: 0; /* Set margin-bottom to 0 to remove the space */
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px;
+    background-image:  url('https://img.freepik.com/premium-photo/spa-cosmetic-products-branches-with-leaves_185193-23625.jpg?w=2000');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat; /* Prevent repeating of the image */
+    background-size: cover;
+    
+}
+
+.product {
+    width: calc(20% - 20px); /* 15% width with some margin in between */
+    margin-bottom: 20px;
+    border: 0px;
+    padding: 10px;
+    margin: 0; /* Remove margin */
+}
+
+.product img {
+    max-width: 100%;
+    margin-bottom: 10px;
+    height: 200px; /* Adjust the height as needed */
+    object-fit: cover;
+}
+
+.product img:hover{
+    transform: scale(1.1); /* Enlarge the image on hover */
+}
+.product h3 a {
+    text-decoration: none;
+    color: inherit; /* Inherit the color from parent styles */
+    font-size: 19px;
+}
+
+
+
+/* Style the "Add to Cart" button */
+.add-to-cart {
+    background-color: #00b35a;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #00b386;
+}
+
+/* Add this CSS to your stylesheet */
+#cart-items {
+    max-height: 400px; /* Adjust the max height as needed */
+    overflow-y: auto; /* Enable vertical scrolling when necessary */
+  }
+  
+  /* Style for the Checkout button */
+#checkout-button {
+    background-color: #007bff; /* Blue color */
+    color: #fff; /* White text color */
+    padding: 10px 20px; /* Add padding for better clickability */
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 auto; /* Center the button horizontally */
+  }
+  
+  /* Hover effect for the Checkout button */
+  #checkout-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Style for the Remove button */
+  /* Style for the quantity input */
+.item-quantity {
+    width: 40px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+    display: block; /* Display on its own line */
+    margin-top: 5px; /* Add spacing between input and button */
+  }
+  
+  /* Style for the Remove button */
+  .remove-item {
+    background-color:  #27e9b8;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    display: block; /* Display on its own line */
+    margin-top: 5px; /* Add spacing between input and button */
+    text-align: center;
+    margin: 0 auto; /* Center the button horizontally */
+  }
+
+  .address-container {
+    background-color: #f7dfbf;
+  }
+  
+  .address-details {
+    margin-top: 0px; /* Adjust the margin as needed to position it below the order history */
+    padding: 20px;
+    border: 0px solid;
+    background-color:  transparent;
+}
+
+/* Style the logout and delete account buttons */
+#logout-button,
+#delete-account-button {
+    display: block;
+    margin-top: 10px;
+    background-color: #13ca7e; /* Red background color, you can change this */
+    color: #fff; /* Text color, you can change this */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+  /* You can also add additional styling based on your design preferences */
+  .parallax-background {
+    background-image: url('https://img.freepik.com/premium-photo/spa-cosmetic-products-branches-with-leaves_185193-23625.jpg?w=2000'); /* Update the path to your image */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 90vh; /* Adjust the height as needed */
+}
+
+.parallax-content {
+    font-size: 20px;
+}
+
+/* CSS for styling the address display */
+.address-display {
+    font-size: 16px;
+    color: #333; /* Text color */
+    background-color: #f0f0f0; /* Background color */
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+.cart-container {
+    max-height: 300px; /* Set the maximum height for the cart */
+    overflow-y: scroll; /* Add vertical scrollbar if needed */
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.cart-item img {
+    width: 50px; /* Set a fixed width for all cart item images */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px;
+}
+
+

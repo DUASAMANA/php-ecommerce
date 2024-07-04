@@ -1,0 +1,185 @@
+/* Reset default margin and padding */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+.logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 70px;
+    align-items: center;
+}
+
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: #333;
+    color:white;
+}
+
+.menu-icon, .search-icon, .cart-icon {
+    cursor: pointer;
+    font-size:x-large;/* Adjust the size as needed */
+}
+
+.menu-sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #222;
+    transition: left 0.3s ease;
+}
+
+.menu-sidebar.active {
+    left: 0;
+}
+.cart-sidebar {
+    position: fixed;
+    top: 0px;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #222;
+    transition: right 0.3s ease;
+}
+
+.cart-sidebar.active{
+    right:0;
+}
+
+.cart-sidebar h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    margin-top: 50px; /* Adjust the margin-top value as needed */
+    text-align: center; /* Center-align the text */
+}
+
+.cart-sidebar p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center; /* Center-align the text */
+    color: #fff; /* Adjust the text color */
+}
+
+.cart-sidebar #cart-total {
+    color: white; /* Adjust the color of the total amount */
+}
+
+
+
+
+
+ul {
+    list-style: none;
+    padding: 50px;
+}
+
+ul li {
+    margin-bottom: 50px;
+}
+
+
+
+
+.search-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-box.active {
+    display: block;
+}
+
+.close-icon {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    color:white; /* Adjust the icon color */
+}
+
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-bottom: 50px;/* Adjust the margin as needed */
+    margin-top: 70px;/* Adjust the margin as needed */
+    margin-left: 50px;/* Adjust the margin as needed */
+}
+
+.nav-links a {
+    display: block; /* Make the link a block-level element */
+    text-decoration: none; /* Remove underline from the link */
+    font-weight: bold;
+    color: rosybrown; /* Apply the desired link color */
+}
+
+/* Apply background color and padding to the body */
+body {
+    background-image: url('https://img.freepik.com/premium-photo/spa-cosmetic-products-branches-with-leaves_185193-23625.jpg?w=2000'); /* Replace with your image path */
+    background-size: cover; /* Adjust to your preference */
+    background-repeat: no-repeat; /* Adjust to your preference */
+  }
+
+/* Style the form */
+form {
+    background-color: #f7dfbf;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    max-width: 600px; /* Limit the form width */
+    margin: 0 auto; /* Center the form horizontally */
+}
+
+/* Style form fields */
+.form-control {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 8px; /* Reduced padding */
+}
+
+/* Style the submit button */
+.btn-primary {
+    background-color: #4dfdd1;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+/* Hover effect for buttons */
+.btn-primary:hover {
+    background-color: #1df1ce;
+    color: #fff;
+}
+
+.text-center{
+    font-family: 'Dancing script', cursive;
+    font-size: 60px;
+}

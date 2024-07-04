@@ -1,0 +1,23 @@
+html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Order Confirmation</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Order Confirmation</h1>
+    <p>Your order has been placed successfully.</p>
+    <p>Your order ID is: <?php echo $order_id; ?></p>
+    <p>The items in your order are:</p>
+    <ul>
+      <?php foreach ($items as $item) { ?>
+        <li><?php echo $item['name']; ?> (<?php echo $item['quantity']; ?>)</li>
+      <?php } ?>
+    </ul>
+    <p>The total price of your order is: <?php echo $_SESSION['total']; ?></p>
+    <p>Thank you for shopping with us!</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script defer src="script.js"></script>
+    <title>Elixir</title>
+   
+        
+</head>
+<body>
+    <header>
+        <div class="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="logo">
+            Elixir
+        </div>
+       
+        </div>
+        <div class="sidebar cart-sidebar">
+            <i class="fas fa-times close-icon"></i>
+         <!-- Cart sidebar content will be loaded dynamically -->
+         <h2>Cart</h2>
+         <ul id="cart-items">
+             <!-- Cart items will be added dynamically through JavaScript -->
+         </ul>
+         <p>Total: Ksh<span id="cart-total">0.00</span></p>
+     </div>
+
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+    </header>
+    <div class="sidebar menu-sidebar">
+        <i class="fas fa-times close-icon"></i>
+        <ul class="nav-links">
+            <li><a href="project.html">Home</a></li>
+            <li><a href="skin.html">Skincare</a></li>
+            <li><a href="gym.html">Gym Equipments</a></li>
+            <li><a href="supplements.html">Supplements</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="account.html">My Account</a></li>
+        </ul>
+    </div>
+    
+    <div class="content">
+        <!-- Your website content here -->
+    </div>
+    <div class="image-link-container">
+    <a href="skin.html" class="custom-link">
+    <div class="image-container">
+    <img src="https://img.freepik.com/premium-photo/amber-glass-bottle-with-dropper-pipette-with-serum-essential-oil-arch-with-green-leaf-skin-care-cosmetic-beauty-concept-face-body-care_680447-299.jpg?w=360" alt="Skincare" width="100" height="200">
+    </div>
+    <p>Skincare</p>
+    </a>
+    <a href="supplements.html" class="custom-link">
+        <div class="image-container">
+            <img src="https://media.istockphoto.com/id/491395412/photo/herbal-medicine-pills-and-mortar-over-bright-background.jpg?s=612x612&w=0&k=20&c=t_uNhNJ0r4LcsOtjhRJG2I8-8MCdrcrwgnyD6Z7mc_Q=" alt="supplements" width="100" height="100">
+        </div>
+        <p>Supplements</p>
+    </a>
+    <a href="gym.html" class="custom-link">
+        <div class="image-container">
+            <img src="https://m.media-amazon.com/images/I/61LyUJBM7eL._AC_SX466_.jpg" alt="gymequipments" width="100" height="100">
+        </div>
+        <p>Gym Equipments</p>
+        </div>
+
+       <div class="hero-section">
+        <div class="top-heading">
+            <h1>UPTO 50% OFF</h1>
+        </div>
+        <div class="carousel-container">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ul>
+        
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="skin.html" class="custom-link1">
+                        <div class="image-container">
+                            <img src="https://i.insider.com/5ff366d26056b60018721cc3?width=1000&format=jpeg&auto=webp" alt="Skincare" width="100" height="200">
+                        </div>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="supplements.html" class="custom-link1">
+                        <div class="image-container">
+                            <img src="https://www.verywellfit.com/thmb/voYmR8tjDAKvvx_KcSs1umwYUDo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/best-vitamin-brands-4843442-Fit-7fbb1bb223954f2e81f8486eb1403fb4.jpg" alt="supplements" width="100" height="100">
+                        </div>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="gym.html" class="custom-link1">
+                        <div class="image-container">
+                            <img src="https://www.verywellfit.com/thmb/ssO_3Px39AeLBWfHexZGwZIDKjM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20-best-budget-home-gym-equipment-buys-of-2022-tout-0a295ea974fc47478d6860bd7b25d301.jpg" alt="gymequipments" width="100" height="100">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+        
+        <script>
+            // Initialize the carousel
+            $(document).ready(function(){
+                $('#myCarousel').carousel();
+            });
+        </script>
+        
+</body>
+</html>

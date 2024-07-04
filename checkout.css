@@ -1,0 +1,135 @@
+/* Reset default margins and paddings */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Logo styling */
+.logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 5rem; /* Adjust the size as needed with responsive units */
+    margin: 0 auto; 
+    display: block;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+/* Icon styles */
+.menu-icon, .search-icon, .cart-icon {
+    cursor: pointer;
+    font-size: x-large; /* Adjust the size as needed */
+}
+
+/* Sidebar styles */
+.menu-sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #222;
+    transition: left 0.3s ease;
+    z-index: 9999; /* Set a high z-index to ensure the sidebar is on top */
+}
+
+.menu-sidebar.active {
+    left: 0;
+}
+
+/* List styles */
+ul {
+    list-style: none;
+    padding: 50px;
+}
+
+ul li {
+    margin: 50px 0; /* Adjust the margins as needed */
+}
+
+/* Search container styles */
+
+
+.close-icon {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    color: white; /* Adjust the icon color */
+}
+
+/* Navigation links styles */
+.nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 70px 50px 50px; /* Adjust the margins as needed */
+}
+
+.nav-links a {
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    color:  rosybrown; /* Use a CSS variable for link color */
+}
+
+
+.product-image {
+    max-width: 100px; /* Set the maximum width as needed */
+    max-height: 100px; /* Set the maximum height as needed */
+    width: auto;
+    height: auto;
+}
+
+.popup-message {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background: #4CAF50; /* Green background color for success messages */
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.col-md-5 {
+    background-color: #f7dfbf;
+    padding: 0px; /* Add padding as needed */
+    border-radius: 5px;
+}
+
+.col-md-6 {
+    background-color:black;
+
+}
+
+h2 {
+    color: white;
+  }
+  
+.product-list {
+    color: white;
+  }
+  
+#totalPrice {
+    color: white;
+  }
+  
+  .pricing-label {
+    color: white;
+  }
+  

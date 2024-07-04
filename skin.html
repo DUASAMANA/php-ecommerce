@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="skin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+<script defer src="skin.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Skin Care</title>
+   
+        
+</head>
+<body>
+    <header>
+        <div class="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="logo">
+            Skin Care
+        </div>
+       
+        </div>
+        <div class="sidebar cart-sidebar">
+            <i class="fas fa-times close-icon"></i>
+            <!-- Cart sidebar content will be loaded dynamically -->
+            <h2>Cart</h2>
+            <div id="cart-container">
+            <ul id="cart-items">
+               <div class="cart-item-details">
+                   <div class="cart-item-info">
+                     <img src="${item.image}" alt="${item.name}" width="50">
+                     <span>${item.name}</span>
+                   </div>
+                   <div class="cart-item-actions">
+                     <input type="number" class="item-quantity" value="${item.quantity}" min="1">
+                     <button class="remove-item" data-product-id="${item.id}">Remove</button>
+                   </div>
+         </ul>
+         <p>Total: ksh<span id="cart-total">0.00</span></p>
+         <button id="checkout-button">Checkout</button>
+     </div>
+        </div>
+
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+    </header>
+    <div class="sidebar menu-sidebar">
+        <i class="fas fa-times close-icon"></i>
+        <ul class="nav-links">
+            <li><a href="project.html">Home</a></li>
+            <li><a href="gym.html">Gym Equipments</a></li>
+            <li><a href="supplements.html">Supplements</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="account.html">My Account</a></li>
+        </ul>
+    </div>
+    
+
+    <div class="container-fluid">
+        <div class="content">
+        <div class="brand-column">
+            <h2 class="brand-title">The ordinary</h2>
+            <div class="product-container">
+            <div class="product">
+                <img src="OBnhzE.png" alt="Product 1">
+               <h3><a href="product1.html">The Ordinary Hyaluronic Acid 2% + B5</a></h3>
+                <p>ksh2100.00</p>
+                <button class="add-to-cart" onclick="addToCart('The Ordinary Hyaluronic Acid 2% + B5', 2100.00, 'OBnhzE.png')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="peeling solution.png" alt="Product 2">
+                <h3><a href="product2.html">The Ordinary AHA 30% + BHA 2% Peeling Solution</a></h3>
+                <p>ksh2400.00</p>
+                <button class="add-to-cart" onclick="addToCart('The Ordinary AHA 30% + BHA 2% Peeling Solution', 2400.00, 'peeling solution.png')">Add to Cart</button>
+            </div>
+            
+    
+            <div class="product">
+                <img src="hip seed.png" alt="Product 3">
+                <h3><a href="product3.html">The Ordinary 100% Organic Cold-Pressed Rose Hip Seed Oil</a></h3>
+                <p>ksh3450.00</p>
+                <button class="add-to-cart" onclick="addToCart('The Ordinary 100% Organic Cold-Pressed Rose Hip Seed Oil', 3450.00,'hip seed.png')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="alpha.png" alt="Product 4">
+                <h3><a href="product4.html">The Ordinary Alpha Arbutin 2% + HA</a></h3>
+                <p>ksh2500.00</p>
+                <button class="add-to-cart" onclick="addToCart('The Ordinary Alpha Arbutin 2% + HA', 2500.00, 'alpha.png')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="powder.png" alt="Product 5">
+                <h3><a href="product5.html">The Ordinary 100% Niacinamide Powder</a></h3>
+                <p>ksh1800.00</p>
+                <button class="add-to-cart" onclick="addToCart('The Ordinary 100% Niacinamide Powder', 1800.00, 'powder.png')">Add to Cart</button>
+        </div>
+            </div>
+            <div class="content">
+        <div class="brand-column">
+            <h2 class="brand-title">Glow Recipe</h2>
+            <div class="product-container">
+            <div class="product">
+                <img src="facial.png" alt="Product 6">
+               <h3><a href="product6.html">Watermelon Glow Hyaluronic Clay Pore-Tight Facial</a></h3>
+                <p>ksh5812.00</p>
+                <button class="add-to-cart" onclick="addToCart('Watermelon Glow Hyaluronic Clay Pore-Tight Facial', 5812.00, 'facial.png')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="body cream.png" alt="Product 7">
+                <h3><a href="product7.html">Watermelon Glow Pink Dream Body Cream</a></h3>
+                <p>ksh4068.00</p>
+                <button class="add-to-cart" onclick="addToCart('Watermelon Glow Pink Dream Body Cream',4068.00,'body cream.png')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="avocado.png" alt="Product 8">
+            <h3><a href="product8.html">Avocado Ceramide Recovery Serum</a></h3>
+            <p>ksh6100.00</p>
+            <button class="add-to-cart" onclick="addToCart('Avocado Ceramide Recovery Serum', 6100.00,'avocado.png')">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="tight toner.png" alt="Product 9">
+        <h3><a href="product9.html">Watermelon Glow PHA + BHA Pore-Tight Toner</a></h3>
+        <p>ksh4900.00</p>
+        <button class="add-to-cart" onclick="addToCart('Watermelon Glow PHA + BHA Pore-Tight Toner',4900.00,'tight toner.png')">Add to Cart</button>
+</div>
+<div class="product">
+    <img src="dew drops.png" alt="Product 10">
+    <h3><a href="product10.html">Watermelon Glow Niacinamide Dew Drops</a></h3>
+    <p>ksh4000.00</p>
+    <button class="add-to-cart" onclick="addToCart('Watermelon Glow Niacinamide Dew Drops', 4000.00,'dew drops.png')">Add to Cart</button>
+</div>
+            </div>
+<div class="content">
+<div class="brand-column">
+    <h2 class="brand-title">Bioderma</h2>
+    <div class="product-container">
+<div class="product">
+    <img src="bioderma 2.png" alt="Product 11">
+    <h3><a href="product11.html">Bioderma Pigmentbio foaming cream</a></h3>
+    <p>ksh5666.00</p>
+    <button class="add-to-cart" onclick="addToCart('Bioderma Pigmentbio foaming cream',5666.00,'bioderma 2.png')">Add to Cart</button>
+</div>
+<div class="product">
+    <img src="bioderma night.png" alt="Product 12">
+    <h3><a href="product12.html">Bioderma Pigmentbio Night Renewer</a></h3>
+    <p>ksh3632.00</p>
+    <button class="add-to-cart" onclick="addToCart('Bioderma Pigmentbio Night Renewer',3632.00,'bioderma night.png')">Add to Cart</button>
+</div>
+<div class="product">
+    <img src="project images.png" alt="Product 13">
+    <h3><a href="product13.html">Bioderma Pigmentbio Sensitive Areas 75ml</a></h3>
+    <p>ksh3632.00</p>
+    <button class="add-to-cart" onclick="addToCart('Bioderma Pigmentbio Sensitive Areas 75ml',3632.00,'project images.png')">Add to Cart</button>
+</div>
+    </div>
+        
+</body>
+</html>
